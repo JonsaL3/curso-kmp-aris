@@ -24,6 +24,7 @@ kotlin {
     }
 
     sourceSets {
+        task("testClasses")
         commonMain.dependencies {
             //put your multiplatform dependencies here
         }
