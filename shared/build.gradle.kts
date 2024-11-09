@@ -26,7 +26,9 @@ kotlin {
     sourceSets {
         task("testClasses")
         commonMain.dependencies {
-            //put your multiplatform dependencies here
+            implementation(libs.navigation.compose)
+            implementation(libs.compose.ui)
+            implementation(libs.compose.foundation)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
